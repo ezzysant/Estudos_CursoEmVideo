@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Águas RJ</title>
+</head>
+<body>
+    <h1>Compre sua água no Águas RJ</h1>
+    <p>De que estádo você é? <input type="text" name="loc" id="loc"> <input type="button" value="Comprar" onclick="comprar()"></p>
+    <div id="res"></div>
+
+    <script>
+        function comprar(){
+            var loc = document.getElementById('loc');
+            var res = document.getElementById('res');
+            res.innerHTML = `<p>Tu é de <strong>${loc.value}</strong></p>`
+            if(loc.value == 'Rio de Janeiro'){
+                res.innerHTML += `<p>Faço a água <strong>5 reais</strong> pra tu Paizão!!!`
+            }else{
+                res.innerHTML += `<p>Pra gringo é mais caro kkk!!!</p>`
+            }
+
+            res.innerHTML += `<p>Volte sempre</p>`
+        }
+    </script>
+    
+</body>
+</html>

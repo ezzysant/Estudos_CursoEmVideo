@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situação do aluno</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button{
+            height:40px;
+        }
+
+        div#res{
+            margin:10px 0 ;
+        }
+
+        span{
+            font-weight:bold;
+        }
+
+        #aprv{
+            background:rgba(0, 255, 0, 0.2);
+            color:green;
+        }
+        #reprv{
+            background:rgba(255, 0, 0, 0.2);
+            color:red;
+        }
+        #recup{
+            background:rgba(255, 166, 0, 0.2);
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Situação do aluno</h1>
+    <button onclick="aprovar()">Entrar com as notas</button>
+    <div id="res">Clique no botão acima para informar as notas do aluno.</div>
+
+    <script>
+        let res = document.getElementById('res')
+
+        function aprovar(){
+            let nome = window.prompt('Qual é o nome do aluno?')
+            let nota1 = window.prompt(`Primeira nota de ${nome}:`)
+            let nota2 = window.prompt(`Segunda nota de ${nome}:`)
+
+            let n1 = Number(nota1.replace("," , "."))
+            let n2 = Number(nota2.replace("," , "."))
+
+            media = (n1 + n2) / 2
+
+            res.innerHTML = `<h1>Analizando a situação de ${nome}</h1>`
+            res.innerHTML += `<p>Com as notas ${n2.toFixed(1)} e ${n2.toFixed(1)}, a <strong>média é ${media.toFixed(1)}</strong></p>`
+
+            if(media < 3){//Reprovado
+                res.innerHTML += 'Com média abaixo de 3.0, o aluno está <span id="reprv">REPROVADO</span>'
+            }else if(media <= 6){//Recuperação
+                res.innerHTML += 'Com média entre 3.0 e 6.0, o aluno está <span id="recup">RECUPERAÇÃO</span>'
+
+            }else{//Aprovado
+                res.innerHTML += 'Com média acima de 6.0, o aluno está <span id="aprv">APROVADO</span>'
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

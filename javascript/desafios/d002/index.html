@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecendo Usuario</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        button{
+            width:100px;
+            height:50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo</h1>
+    <button onclick="dadosUsuario()">Iniciar</button>
+    
+    <script>
+
+        function dadosUsuario(){
+            let nome = window.prompt('Como é seu nome?');
+            let idade = window.prompt(`Olá, ${nome}! Quantos anos você tem?`);
+            window.alert(`Acabei de conhecer ${nome}, que tem ${idade} anos de idade!`)
+            
+        }
+    </script>
+</body>
+</html>

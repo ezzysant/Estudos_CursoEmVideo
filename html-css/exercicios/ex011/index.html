@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <h2>Imagem dinâmica</h2>
+    <p>Tente abrir esse site em vários disposítivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto">
+    </picture>
+    <h2>Áudio no site</h2>
+    <audio preload="metadata" controls loop>
+        <source src="midia/Measured Paces - Kevin MacLeod.mp3" type="audio/mpeg">
+        <source src="midia/Measured Paces - Kevin MacLeod.ogg" type="audio/ogg">
+        <source src="midia/Measured Paces - Kevin MacLeod.wav" type="image/wav">
+        <p>Infelizmente seu navegador não conseguiu carregar o formato do arquivo, <a href="midia/Measured Paces - Kevin MacLeod.mp3" download="Measured Paces - Kevin MacLeod.mp3" type="audio/mpeg">Click aqui</a> para baixar o arquivo</p>
+    </audio>
+    <p><abbr title="Measured Paces de Kevin MacLeod é licenciada de acordo com a licença Atribuição 4.0 da Creative Commons.  https://creativecommons.org/licenses/by/4.0/
+
+    Fonte:http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100164
+    
+    Artista:http://incompetech.com/">Direitos do Áudio</abbr></p>
+    <p> </p>
+
+</body>
+</html>

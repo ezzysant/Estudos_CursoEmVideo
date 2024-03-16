@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="img">
+                <!--Sua imagem aqui-->
+            </div>
+
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <div class="contem">
+                        <label for="ieml">
+                            <span class="material-icons">
+                                person
+                                </span>
+                        </label>
+
+                        <div class="entrada">
+                            <input type="email" name="eml" id="ieml" minlength="8" required placeholder="Email" autocomplete="email">
+                        </div>
+                        
+                    </div>
+
+                    <div class="contem">
+                        <label for="ipwd">
+                            <span class="material-icons">
+                                vpn_key
+                                </span>
+                        </label>
+
+                        <div class="entrada">
+                            <input type="password" name="pwd" id="ipwd" minlength="8" required placeholder="Senha" autocomplete="new-password"oninput="buttonVisible()">
+                        </div>
+
+                        <div id="ivsb" onclick="visibilityOnOff()"
+                        style="background-image: url(icons/visibility/icon-visibility-off.png);">
+                        </div>
+
+                    </div>
+
+                    <a href="https://accounts.google.com/signin/v2/usernamerecovery?continue=https%3A%2F%2Fwww.google.com%3Fhl%3Dpt-PT&dsh=S-184482816%3A1689369212122397&flowEntry=AddSession&flowName=GlifWebSignIn&hl=pt-PT">Esqueceu sua senha?</a>
+                    
+                    <input type="submit" value="Entrar">
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+
+        var vsb_clck = 0;
+
+        function visibilityOnOff(){
+
+            if(vsb_clck == 0){
+                vsb_clck = 1;
+                ipwd.type = 'text';
+                ivsb.style.backgroundImage = 'url(icons/visibility/icon-visibility-on.png)'
+            }else{
+                vsb_clck = 0;
+                ipwd.type = 'password';
+                ivsb.style.backgroundImage = 'url(icons/visibility/icon-visibility-off.png)';
+            }
+        }
+
+        function buttonVisible(){
+            if(ipwd.value != ''){
+                ivsb.style.display = 'block'
+            }else{
+                ivsb.style.display = 'none'
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+Analisador de Números
+
+Adicionar um input que permite por numeros de 1 até 100
+
+tem button de adicionar
+
+O valor vai ser adicionado em uma array
+
+adicionar uma <selection> com <option> falado os valores
+'valor ${} adicionado'
+
+Não pode adicionar valors iguais
+
+Button de finalizar para rodar uma função
+
+-Colocar o comprimento da array
+-Colocar o maior numero
+-Colocar o menor numero
+-Colocar a soma dos valores dentro da array
+-Fazer a media da array (soma de todos os valores dividido peço comprimento da Array)
+

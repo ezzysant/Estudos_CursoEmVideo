@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #43a0f7;
+}
+
+*{
+    margin:0;
+    font: normal 1em Arial;
+    box-sizing: border-box;
+}
+
+html, body{
+    width:100%;
+}
+
+body{
+    background:var(--cor01);
+}
+
+header{
+    text-align:center;
+    margin: 20px 0;
+}
+
+header > h1{
+    font-size:2em;
+    font-weight:bold;
+    color: white;
+}
+
+section{
+    min-width:320px;
+    background:white;
+    color:black;
+    padding:10px;
+    
+    margin:auto;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+div#boxPassword{
+    background:var(--cor01);
+    border-radius:10px;
+    height:66px;
+    overflow: hidden;
+    padding:8px;
+    margin-bottom:10px;
+}
+
+div#boxPassword > div#textPw{
+    float:left;
+    /*background:orange;*/
+    width:calc(100% - 80px);
+    height:100%;
+    padding:0;
+    border:0;
+    margin:0;
+}
+
+div#textPw > input#itxtp{
+    width:100%;
+    height:100%;
+    border:0;
+    padding:0 5px;
+    margin:0;
+    font-size: 2.5em;
+    font-weight:bolder;
+    border-radius:8px 0 0 8px;
+}
+
+div#boxPassword > div#buttonsPw{
+    float:right;
+    /*background:rgb(255, 0, 0);*/
+    width:80px;
+    height:100%;
+    padding:0;
+    border:0;
+    margin:0;
+}
+
+div#buttonsPw > button{
+    border:0;
+    background:none;
+    position:relative;
+}
+
+div#buttonsPw > button:hover{
+    cursor:pointer;
+}
+
+div#buttonsPw > button#copy{
+    
+    float:left;
+    width:50%;
+    height:100%;
+
+}
+div#buttonsPw > button#gerar{
+    
+    float:right;
+    width:50%;
+    height:100%;
+}
+
+div#buttonsPw span{
+    
+    font-size:2em;
+    color:white;
+    transform: translate(-8%, 10%);
+}
+
+div#buttonsPw span:hover{
+    
+    font-size:2.3em;
+    transition: .1s;
+}
+
+div#buttonsPw span:active{
+    
+    font-size:1.8em;
+}
+
+div#dados > h1{
+    font-size:1.8em;
+    font-weight:bold;
+}
+
+div#dados > hr{
+    margin: 10px 0;
+}
+
+div#numDados{
+    margin-bottom:10px;
+}
+
+div#numDados > input[type="number"]{
+    width:40px;
+    padding:0 0 0 5px;
+    border-radius:8px;
+    border: solid 1px black;
+}
+
+div#checkboxDados{
+    margin-bottom:10px;
+}
+
+div#checkboxDados > input[type = "checkbox"]{
+    margin:5px 0;
+}
+
+footer{
+    text-align:center;
+    margin:20px 0;
+}
+
+footer > a{
+    color:white;
+    font-style:italic;
+    text-decoration:none;
+}
+
+footer > a:hover{
+    text-decoration:underline;
+}

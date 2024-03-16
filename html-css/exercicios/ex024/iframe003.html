@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narvegação em iframe</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#nav{
+            width: 97vw;
+            height:300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de navegação</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, repellat a optio accusamus deserunt neque fugit dolores libero illo blanditiis dicta nam omnis, repudiandae nihil qui necessitatibus inventore, ipsum magni.</p>
+
+    <ul>
+        <li><a href="pag-externa/pag001.html" target="frame">Página001</a></li>
+        <li><a href="pag-externa/pag002.html" target="frame">Página002</a></li>
+        <li><a href="pag-externa/pag003.html" target="frame">Página003</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, repellat a optio accusamus deserunt neque fugit dolores libero illo blanditiis dicta nam omnis, repudiandae nihil qui necessitatibus inventore, ipsum magni.</p>
+
+    <iframe id="nav" name="frame" srcdoc="
+    <h1>Este é um conteúdo estático do iframe</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, repellat a optio accusamus deserunt neque fugit dolores libero illo blanditiis dicta nam omnis, repudiandae nihil qui necessitatibus inventore, ipsum magni</p><img src='imagens/cursoemvideo.png'>" frameborder="0">Seu navegador não é conpatibel...
+
+    </iframe>
+
+    <ul style="columns:2;">
+        <li><a href="iframe001.html">iframe001</a></li>
+        <li><a href="iframe002.html">iframe002</a></li>
+        <li><a href="iframe003.html">iframe003</a></li>
+        <li><a href="iframe004.html">iframe004</a></li>
+        <li><a href="iframe005.html">iframe005</a></li>
+        <li><a href="iframe006.html">iframe006</a></li>
+    </ul>
+    
+</body>
+</html>

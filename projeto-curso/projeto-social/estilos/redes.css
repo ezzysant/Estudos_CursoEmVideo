@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #696969;
+}
+
+::-webkit-scrollbar{
+    width:0;
+    height:0;
+}
+
+img{
+    width:100vw;
+}
+
+a{
+    display:block;
+    color:white;
+    background:#383838;
+    text-align:center;
+    padding:10px;
+    font-weight: bolder;
+    text-decoration:none;
+    font-size: .8em;
+}
+
+a:hover{
+    text-decoration:underline;
+}

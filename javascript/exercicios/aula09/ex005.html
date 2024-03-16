@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            color:white;
+            background: #383838;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:1.2em;
+        }
+
+        #_button{
+            display:inline-block;
+            padding:5px;
+            border: solid 2px white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #_button:hover{
+            background: white;
+            color: #383838;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="_kss">Inciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="_button">Clique em mim</div>
+
+    <script>
+        var text = document.querySelector('h1#_kss');
+        var btn = document.querySelector('#_button');
+
+        btn.addEventListener('click',()=>{text.innerHTML = 'Mudou o Titulo'})
+
+    </script>
+    
+</body>
+</html>

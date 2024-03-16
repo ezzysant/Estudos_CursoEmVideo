@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio das menssagens</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type=button]{
+            width:100px;
+            height:100px;        }
+    </style>
+</head>
+<body>
+    <h1>Desafio das Menssagens</h1>
+    <input type="button" value="Botão 1" onclick="menssagem(1)">
+    <input type="button" value="Botão 2" onclick="menssagem(2)">
+    <input type="button" value="Botão 3" onclick="menssagem(3)">
+    
+    <script>
+        let buttons = document.getElementsByClassName('buttons')
+
+        function menssagem(n=0){
+            window.alert(`Você apertou o ${n}° botão!`)
+        }
+    </script>
+</body>
+</html>

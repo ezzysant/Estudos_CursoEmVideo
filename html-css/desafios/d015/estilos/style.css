@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+
+*{
+    margin:0;
+    padding:0;
+
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:1em;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor01: #5F2C82;
+    --cor02: #b4eeed;
+    --cor03: #49a09d;
+    --cor04: #377573;
+    --cor05: #2a5a58;
+    
+}
+
+html, body{
+    width:100vw;
+    height:100vh;
+    background-color: var(--cor01);
+}
+
+main{
+    width:100%;
+    height:100%;
+}
+
+section#login{
+    width:250px;
+    
+    /*background:white;*/
+    box-shadow:-3px -3px 8px rgba(0, 0, 0, 0.25);
+
+    border-radius: 20px;
+
+    position:absolute;
+
+    left: 50%;
+    top:50%;
+
+    transform: translate(-50%,-50%);
+    transition: .5s;
+}
+
+div#img{
+    width:100%;
+    height:200px;
+    background: blue url(../imagens/metal.jpg) center bottom no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+div#formulario{
+    width:100%;
+    height:60%;
+    background-color:white;
+    padding:10px;
+    border-radius: 0 0 20px 20px;
+}
+
+div#formulario > h1{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p{
+    font-size: .8em;
+    margin-bottom: 10px;
+}
+
+div.contem{
+    height:40px;
+    background-color: var(--cor01);
+    margin-bottom: 5px;
+    border:1px solid var(--cor01);
+    border-radius:10px;
+    
+}
+
+div.contem > label{
+    float: left;
+    width:40px;
+    height:100%;
+}
+
+div.contem > label > span{
+    font-size: 1.6em;
+    color:white;
+    position: relative;
+
+    top:50%;
+    left: 50%;
+
+    transform: translate( -50%, -50%);
+    cursor:pointer;
+}
+
+div.contem > div#ivsb{
+    display:none;
+
+    background-size:cover;
+
+    width:20px;
+    height:20px;
+
+    color: #181818;
+    font-size: 1.3em;
+
+    position:relative;
+
+    top:-100%;
+    left:calc(100% - 25px);
+
+    transform:translate(0, 50%);
+    cursor:pointer;
+}
+
+div.entrada{
+    display:inline-block;
+    width: calc(100% - 40px);
+    height:100%;
+    /*background:orange;*/
+}
+
+div.entrada > input{
+    width:100%;
+    height:100%;
+    padding:2%;
+    border:1px solid var(--cor01);
+
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+form > a{
+    display:inline-block;
+    font-size:.7em;
+    color:var(--cor03);
+    text-decoration:none;
+    padding:2px;
+    margin-bottom:20px;
+}
+
+form > a:hover{
+    text-decoration: underline;
+}
+
+form > a:active{
+    background-color:var(--cor02);
+}
+
+form > input[type=submit]{
+    width:100%;
+    height:40px;
+    
+    color:white;
+    background-color: var(--cor03);
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: var(--cor04);
+}
+
+form > input[type=submit]:active{
+    background-color: var(--cor05);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperaturas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button{
+            height:40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Temperaturas</h1>
+    <button onclick="temperatura()">Converter</button>
+    <div id="res">Clique no botão acima para iniciar.</div>
+
+    <script>
+        function temperatura(){
+            let res = document.getElementById('res')
+
+            let cel = window.prompt('Digíte uma temperatura em °C (Ceulsíud)')
+            let kel = 273.15 + Number(cel)
+            let feh = (Number(cel) * 9/5) + 32
+
+            res.innerHTML = `<h1>A temperatura de ${cel}°C, corresponde a...</h1>`
+            res.innerHTML += `<p>${kel.toFixed(2)}°K (Kelvin)</p><p>${feh.toFixed(2)}°F (Fahrenheit)</p>`
+
+        }
+    </script>
+    
+</body>
+</html>

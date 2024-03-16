@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icons/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="img">
+                <!--Imagem aqui-->
+            </div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <label for="ilogin">
+                            <span class="material-icons">
+                                person
+                            </span>
+                        </label>
+
+                        <div class="entrada"><input type="email" name="login" id="ilogin" autocomplete="email" required maxlength="30" placeholder="Email"></div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="isenha">
+                            <span 
+                            class="material-icons">vpn_key
+                            </span>
+                        </label>
+
+                        <div class="entrada"><input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" maxlength="20" placeholder="Senha" oninput="vsbVisible()"></div>
+
+                        <div id="ivsb" style="background-image:url('icons/visibility/visibility_off.png');"
+                        
+                        onclick="vsbOnOff()"></div>
+
+                    </div>
+
+                    <a href="#">Esqueceu a senha?</a>
+
+                    <input type="submit" value="Entrar">
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        var vsb_clck = 0;
+
+        function vsbOnOff(){
+            if(vsb_clck == 0){
+                vsb_clck = 1;
+                isenha.type = 'text';
+                ivsb.style.backgroundImage = "url(icons/visibility/visibility_on.png)";
+            }else{
+                vsb_clck = 0;
+                isenha.type = 'password';
+                ivsb.style.backgroundImage = "url(icons/visibility/visibility_off.png)";
+            }
+        }
+
+        function vsbVisible(){
+            if(isenha.value != ''){
+                ivsb.style.display = 'inline-block'
+            }else{
+                ivsb.style.display = 'none'
+            }
+        }
+    </script>
+    
+</body>
+</html>

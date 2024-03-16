@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body{
+    background:black;
+    color: white;
+    font: normal 1em Arial;
+}
+
+header{
+    text-align:center;
+}
+
+section{
+    background:white;
+    color:black;
+    width:500px;
+    padding: 10px;
+    border-radius:15px;
+    margin:auto;
+}
+
+#res{
+    text-align:center;
+}
+
+#imagem{
+    border-radius:50%;
+    border: solid 5px red;
+}
+
+footer{
+    text-align:center;
+    font-style:italic;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Segurança em iframe</h1>
+    <p>Qundo você clicar no "Click aqui", em um dos iframe será executado um script e no outro não será execultado o script</p>
+
+    
+    <p>Sem segurança</p>
+    <iframe src="pag-externa/pag005.html">
+        Seu navegador não é compatibel...
+    </iframe>
+    <p>Com segurança</p>
+    <iframe src="pag-externa/pag005.html" referrerpolicy="no-referrer" sandbox="sandbox">
+        Seu navegador não é compatibel...
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea facere earum autem ullam officiis magnam neque sunt cupiditate, cumque sapiente asperiores unde voluptate dignissimos, iste molestias natus impedit perspiciatis? Et.</p>
+
+    <ul style="columns:2;">
+        <li><a href="iframe001.html">iframe001</a></li>
+        <li><a href="iframe002.html">iframe002</a></li>
+        <li><a href="iframe003.html">iframe003</a></li>
+        <li><a href="iframe004.html">iframe004</a></li>
+        <li><a href="iframe005.html">iframe005</a></li>
+        <li><a href="iframe006.html">iframe006</a></li>
+    </ul>
+    
+</body>
+</html>

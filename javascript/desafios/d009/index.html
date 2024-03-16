@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste salarial</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button{
+            height:40px;
+        }
+
+        div#res{
+            margin:10px 0 ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reajuste salarial</h1>
+    <button onclick="reajustar()">Reajustar salário</button>
+    <div id="res">Clique no botão acima para iniciar.</div>
+
+    <script>
+        let res = document.getElementById('res')
+
+        function reajustar(){
+            let nome = window.prompt('Qual é o nome do funcionário?')
+            let salario = window.prompt(`Qual é o salário de ${nome}?`)
+            let porcentagem = window.prompt(`O salário de ${nome} vai ser reajustado em qual porcentagem?`)
+
+            let sal = Number(salario.replace(",","."))
+            let porc = Number(porcentagem.replace(",","."))
+            let aum = (sal * porc) / 100
+            let comAum = sal + aum
+
+            res.innerHTML = `<h1>${nome} recebeu um aumento salarial!`
+
+            res.innerHTML += `<p>O salário atual era ${sal.toLocaleString('pt-br', {style:'currency' , currency: 'BRL'})}.</p>`
+
+            res.innerHTML += `<p>Com um aumento de ${porc}%, o salário vai aumentar ${aum.toLocaleString('pt-br', {style:'currency', currency: 'BRL'})} no próximo mês.</p>`
+
+            res.innerHTML += `<p>E a partir daí, ${nome} vai passar a ganhar ${comAum.toLocaleString('pt-br', {style:'currency', currency:'BRL'})}.</p>`
+
+        }
+
+    </script>
+    
+</body>
+</html>
