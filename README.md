@@ -1,5 +1,4 @@
-#Estudos_CursoEmVideo
-Estudos de desenvolvimento Front-end do Curso em Vídeo
+<p>Meu repoditório dos Cursos HTML5, CSS3 e JS da plataforma Curso em Vídeo<p>
 
 <h2>HTML-CSS</h2>
 
