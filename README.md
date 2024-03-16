@@ -1,5 +1,5 @@
-<h1>Estudos_CursoEmVideo</h1>
-<p>Estudos de desenvolvimento Front-end do Curso em Vídeo.</p>
+#Estudos_CursoEmVideo
+Estudos de desenvolvimento Front-end do Curso em Vídeo
 
 <h2>HTML-CSS</h2>
 
