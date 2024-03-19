@@ -1,6 +1,6 @@
 Meu repositório dos Cursos HTML5, CSS3 e JS da plataforma Curso em Vídeo
 
-## **HTML-CSS**
+## HTML-CSS
 
 ### Exercícios
 
@@ -50,7 +50,7 @@ Meu repositório dos Cursos HTML5, CSS3 e JS da plataforma Curso em Vídeo
 * [d014 Desafio Boletim.](https://ezzysant.github.io/Estudos_CursoEmVideo/html-css/desafios/d014/index.html)
 * [d015 Desafio Site Login.](https://ezzysant.github.io/Estudos_CursoEmVideo/html-css/desafios/d015/index.html)
 
-## **JavaScript**
+## JavaScript
 
 ### Exercícios
 
